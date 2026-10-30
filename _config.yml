@@ -1,0 +1,9 @@
+title: Folcadi articles
+description: Write-ups about building Folcadi — a language-exchange messenger.
+theme: minima
+url: "https://frankmilvus.github.io"
+baseurl: "/folcadi-articles"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

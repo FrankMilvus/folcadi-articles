@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {%- if page.description %}
+    <p class="post-meta">{{ page.description }}</p>
+    {%- endif %}
+  </header>
+
+  {%- if page.image %}
+  <img class="post-cover" src="{{ page.image }}" alt="{{ page.title | escape }}"
+       style="width:100%;height:auto;border-radius:6px;margin:0 0 1.5rem;">
+  {%- endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer" style="margin-top:2rem;padding-top:1rem;border-top:1px solid #e5e5e5;font-size:.95rem;">
+    <p>
+      More writing: <a href="https://dev.to/frankmilvus">dev.to/frankmilvus</a> ·
+      Build notes: <a href="https://t.me/frank_says">Telegram</a> ·
+      Official website: <a href="https://folcadi.com">folcadi.com</a>
+    </p>
+  </footer>
+</article>
