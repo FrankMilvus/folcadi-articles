@@ -133,6 +133,6 @@ That last assertion is the one I would keep in any app with a floating surface. 
 - Never let a transient layout push write into remembered state; drag is the only author of position.
 - Test the return trip, not just the lift.
 
-Both halves of this came from the same question: what does this surface need in order to be correct? For the buttons it was a size and a shape. For the window it was a rectangle that shrinks and a position that does not. The floating dock taught us the same thing about chrome: geometry first, then colour.
+Both halves of this came from the same question: what does this surface need in order to be correct? For the buttons it was a size and a shape. For the window it was a rectangle that shrinks and a position that does not. [The floating dock](https://frankmilvus.github.io/folcadi-articles/articles/2026-11-20-floating-nav-dock-flutter.html) taught us the same thing about chrome: geometry first, then colour.
 
 If you have a floating surface that has to survive a keyboard, I would like to hear which half bit you — the inset arithmetic or the remembered position.
